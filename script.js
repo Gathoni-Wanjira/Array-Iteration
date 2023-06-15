@@ -33,3 +33,11 @@ const findItem = items.find((item) => {
     return item.name === 'computer';
 })
 console.log(findItem);
+
+// forEach Method
+// unlike other methods it doesnot return anything 
+
+items.forEach((item) => {
+    console.log(item.name)
+
+})
