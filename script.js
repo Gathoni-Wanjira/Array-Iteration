@@ -60,3 +60,16 @@ const hasExpensiveItems = items.every((item) => {
 
 })
 console.log(hasExpensiveItems);
+
+
+// Reduce Method
+// it also takes a property other than the item only as shown below
+
+const total = items.reduce((currentTotal, item) => {
+    return item.price + currentTotal
+
+}, 0 )
+console.log(total)
+
+// This method wil start counting from our first value available(currentTotal)
+// The current total value is 0 as indicated so thats what the whole items prices will be added to.
