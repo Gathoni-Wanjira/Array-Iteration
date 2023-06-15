@@ -1,5 +1,5 @@
 const items = [
-    {name: "bike", price: 100},
+    {name: "bike", price: 1000},
     {name: "TV", price: 200},
     {name: "album", price: 70},
     {name: "book", price: 60},
@@ -51,3 +51,12 @@ const hasCheapItems = items.some((item) => {
 })
 console.log(hasCheapItems)
 
+// Every Method
+// It checks if every item in the array is less than 100 dollars... not some items but all
+// If every item is not below 100 dollars it returns false.
+
+const hasExpensiveItems = items.every((item) => {
+    return item.price >= 1000
+
+})
+console.log(hasExpensiveItems);
