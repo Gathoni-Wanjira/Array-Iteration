@@ -24,3 +24,12 @@ const itemsName = items.map((item) => {
     return item.name;
 })
 console.log(itemsName);
+
+
+// Find Method
+// It allows you to find a single object in an array.
+
+const findItem = items.find((item) => {
+    return item.name === 'computer';
+})
+console.log(findItem);
