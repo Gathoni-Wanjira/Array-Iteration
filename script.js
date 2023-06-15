@@ -16,3 +16,11 @@ const filteredItems = items.filter((item) => {
     return item.price <= 100;
 })
 console.log(filteredItems);
+
+// Map Method.
+// Its returns a required new array.
+
+const itemsName = items.map((item) => {
+    return item.name;
+})
+console.log(itemsName);
