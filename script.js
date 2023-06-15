@@ -41,3 +41,13 @@ items.forEach((item) => {
     console.log(item.name)
 
 })
+
+// Some function
+// It only returns true or false regarding to the conditions allocated not the actual entries
+// output is true since there are items below 100 dollars price.
+
+const hasCheapItems = items.some((item) => {
+    return item.price <= 100
+})
+console.log(hasCheapItems)
+
